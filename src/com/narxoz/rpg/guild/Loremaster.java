@@ -17,7 +17,8 @@ public class Loremaster extends GuildMember {
 
     @Override
     public void receive(String topic, GuildMember from, String payload) {
-        System.out.println("[Loremaster " + getName() + "] received on topic='" + topic + "' from " + from.getName() + ": " + payload);
+        System.out.println("[Loremaster " + getName() + "] received on topic='" + topic
+                + "' from " + from.getName() + ": " + payload);
         if ("lore".equals(topic)) {
             System.out.println("  -> Loremaster recording ancient knowledge: " + payload);
         } else if ("curse".equals(topic)) {

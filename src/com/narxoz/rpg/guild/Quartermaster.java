@@ -12,8 +12,7 @@ public class Quartermaster extends GuildMember {
 
     @Override
     public void receive(String topic, GuildMember from, String payload) {
-        System.out.println("[Quartermaster " + getName() + "] received on topic='" + topic
-                + "' from " + from.getName() + ": " + payload);
+        System.out.println("[Quartermaster " + getName() + "] received on topic='" + topic + "' from " + from.getName() + ": " + payload);
         if ("orders".equals(topic)) {
             System.out.println("  -> Quartermaster preparing gear for mission: " + payload);
         } else if ("supplies".equals(topic)) {

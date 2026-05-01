@@ -1,8 +1,5 @@
 package com.narxoz.rpg.guild;
 
-/**
- * Guild officer responsible for wounds, potions, and recovery plans.
- */
 public class Healer extends GuildMember {
 
     public Healer(String name, GuildMediator mediator) {
